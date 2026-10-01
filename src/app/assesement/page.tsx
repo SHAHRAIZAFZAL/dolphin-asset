@@ -104,7 +104,7 @@ export default function InspectionDetailPage() {
                 }}
               />
               <p className="font-montserrat font-normal text-[#4A5568] text-[15px] md:text-[16px] leading-[170%] mb-8">
-                Inspection activities help identify defects, corrosion, deterioration, structural weaknesses, and operational risks that may affect asset safety and performance.
+                This domain covers the systematic evaluation of industrial equipment, structures, and mechanical systems to determine their present condition and fitness for continued operation.
               </p>
 
               <div className="space-y-4 font-montserrat text-[#4A5568] text-[15px]">

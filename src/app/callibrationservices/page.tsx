@@ -99,7 +99,8 @@ export default function CalibrationServicesPage() {
                 }}
               />
               <p className="font-montserrat font-normal text-[#4A5568] text-[15px] md:text-[16px] leading-[170%] mb-8">
-                Regular calibration supports process control, equipment safety, product quality, regulatory compliance, and dependable technical decision-making.
+                Calibration involves verifying measuring instruments against recognized reference standards to ensure accurate, consistent, and reliable readings.
+
               </p>
 
               <div className="space-y-4 font-montserrat text-[#4A5568] text-[15px]">

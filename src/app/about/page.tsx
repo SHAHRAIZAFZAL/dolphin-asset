@@ -10,6 +10,8 @@ import StaggerContainer, {
   staggerScaleVariants,
   staggerFadeVariants,
 } from "../components/StaggerContainer";
+import { Const } from "three/tsl";
+import { li } from "framer-motion/client";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -159,10 +161,10 @@ export default function AboutPage() {
       </section>
 
       {/* Section 3: Our Evolution (From DES To DAIS) */}
-      <section className="w-full bg-[#f8fafc] py-20">
+      {/* <section className="w-full bg-[#f8fafc] py-20">
         <div className="w-full px-6 xl:px-10">
           <div className="xl:ml-24 xl:mr-24 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Left Text & Checkpoints Area */}
+            //  Left Text & Checkpoints Area 
             <AnimatedSection direction="left" delay={0.2}>
               <div className="flex flex-col justify-center">
                 <h3 className="text-[#FD550A] font-medium text-[14px] leading-[140%] tracking-[2px] mb-3 normal-case">
@@ -194,7 +196,7 @@ export default function AboutPage() {
                   expertise and our team.
                 </p>
 
-                {/* Checkpoints List */}
+                //  Checkpoints List 
                 <div className="space-y-4">
                   {[
                     "Same leadership, same trusted client relationships",
@@ -218,7 +220,7 @@ export default function AboutPage() {
               </div>
             </AnimatedSection>
 
-            {/* DAIS Image Only */}
+            // DAIS Image Only 
             <AnimatedSection direction="right" delay={0.4}>
               <div className="relative w-full h-[220px] md:h-[250px]">
                 <Image
@@ -232,7 +234,92 @@ export default function AboutPage() {
             </AnimatedSection>
           </div>
         </div>
-      </section>
+      </section> */}
+
+
+
+
+{/* Corporate Relationship */}
+<section className="w-full bg-white py-16">
+  <div className="w-full px-6 xl:px-10">
+    <div className="xl:ml-24 xl:mr-24 flex flex-col items-center">
+      {/* Heading */}
+      <h2
+        className={`${sourceSerif.className} font-bold text-[#01286D] text-[28px] sm:text-[32px] leading-[110%] tracking-[0.08em] uppercase text-center mb-3`}
+      >
+        Corporate Relationship
+      </h2>
+
+      {/* Orange line */}
+      <div className="w-[200px] h-[6px] bg-[#FD550A] rounded-full mb-10" />
+
+      {/* 2 images: left DES, right DAIS */}
+      <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 mb-8">
+        <AnimatedSection direction="left" delay={0.2}>
+        <div className="flex items-center justify-center rounded-[12px] border border-[#D0D5DD] bg-white px-6 py-8 min-h-[180px]">
+          <Image
+            src="/images/about/des.png"
+            alt="DES — Dolphin Engineering Solutions"
+            width={420}
+            height={160}
+            className="w-full h-auto object-contain"
+          />
+        </div>
+        </AnimatedSection>
+        <AnimatedSection direction="right" delay={0.2}>
+        <div className="flex items-center justify-center rounded-[12px] border border-[#D0D5DD] bg-white px-6 py-8 min-h-[180px] pb-15 pt-15">
+          <Image
+            src="/images/about/dais.png"
+            alt="DAIS — Dolphin Asset Integrity Solutions"
+            width={420}
+            height={160}
+            className="w-full h-auto object-contain"
+          />
+        </div>
+        </AnimatedSection>
+      </div>
+
+      {/* Names + center line */}
+      <div className="w-full grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] items-center gap-4 mb-8">
+        <div className="text-center">
+          <p className="font-bold text-[#01286D] text-[20px] tracking-[0.04em]">
+            DES
+          </p>
+          <p className="font-bold text-[#434343] text-[18px]  uppercase mt-1">
+            Parent Company
+          </p>
+        </div>
+
+        <div className="hidden md:flex items-center justify-center w-[190px]">
+          <span className="h-[3px] w-[60px] bg-[#FD550A]" />
+          <span className="w-[14px] h-[14px] rounded-full bg-[#FD550A] "  />
+          <span className="h-[3px] w-[60px] bg-[#FD550A]" />
+        </div>
+
+        <div className="text-center">
+          <p className="font-bold text-[#01286D] text-[20px] tracking-[0.04em]">
+            DAIS
+          </p>
+          <p className="font-bold text-[#434343] text-[18px]  uppercase mt-1">
+            Sister Concern
+          </p>
+        </div>
+      </div>
+
+      {/* Paragraph box */}
+      <div className="w-full max-w-270 rounded-[12px] border border-[#D0D5DD] bg-[#F8FAFC] px-6 py-6 sm:px-10 sm:py-7">
+        <p className="text-center text-[#434343] text-[13px] font-medium sm:text-[18px] leading-[175%]">
+          Dolphin Engineering Services (DES) is the parent company, with <br/>
+          Dolphin Asset Integrity Solutions (DAIS) operating as its sister
+          concern,<br/> established to expand its capabilities in inspection, asset
+          integrity, and technical services.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
       {/* Section 4: Our Mission & Our Vision */}
       <section className="w-full bg-white py-20">
@@ -481,7 +568,7 @@ export default function AboutPage() {
 
             {/* 2x2 Seamless Grid Without Outer/Card Shadows and Borders */}
             <StaggerContainer
-              className="grid grid-cols-1 lg:grid-cols-2 gap-0 border-none shadow-none"
+              className="grid grid-cols-1 lg:grid-cols-2 gap-0 border-none uppercase  shadow-none"
               staggerDelay={0.2}
             >
               {/* Card 01 - Dark Blue */}
@@ -495,7 +582,7 @@ export default function AboutPage() {
                     style={{
                       fontWeight: 900,
                       fontStyle: "normal",
-                      fontSize: "90px",
+                      fontSize: "70px",
                       lineHeight: "192%",
                       letterSpacing: "0.01em",
                       textAlign: "justify",
@@ -613,7 +700,7 @@ export default function AboutPage() {
                 </div>
                 <div className="z-10 ml-auto text-right max-w-[320px] w-full">
                   <span className="inline-block px-3 py-1 bg-[#FD550A] text-white font-semibold text-[11px] tracking-[0.5px] uppercase rounded-[2px] mb-5">
-                    Operations & Technical
+                    Director Operations & Technical
                   </span>
                   <h3
                     className={`${sourceSerif.className} font-bold text-[30px] sm:text-[34px] leading-[115%] text-white`}
@@ -825,3 +912,4 @@ export default function AboutPage() {
     </div>
   );
 }
+

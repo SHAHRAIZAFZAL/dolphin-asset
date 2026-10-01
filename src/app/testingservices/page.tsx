@@ -91,7 +91,7 @@ export default function TestingServicesPage() {
               />
 
               <p className="font-montserrat text-[#4A5568] text-[15px] md:text-[16px] leading-[170%] mb-8 max-w-2xl">
-                These activities help identify leakage, pressure weaknesses, equipment defects, and performance issues before they develop into operational failures or safety risks.
+                Testing services verify the strength, condition, performance, and operational safety of industrial equipment, pressure systems, pipelines, valves, cylinders, and electrical installations.
               </p>
 
               {/* Checklist items */}
