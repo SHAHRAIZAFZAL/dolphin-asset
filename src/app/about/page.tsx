@@ -269,7 +269,7 @@ export default function AboutPage() {
         <AnimatedSection direction="right" delay={0.2}>
         <div className="flex items-center justify-center rounded-[12px] border border-[#D0D5DD] bg-white px-6 py-8 min-h-[180px] pb-15 pt-15">
           <Image
-            src="/images/about/dais.png"
+            src="/images/about/dais1.png"
             alt="DAIS — Dolphin Asset Integrity Solutions"
             width={420}
             height={160}
