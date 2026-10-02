@@ -256,24 +256,24 @@ export default function AboutPage() {
       {/* 2 images: left DES, right DAIS */}
       <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 mb-8">
         <AnimatedSection direction="left" delay={0.2}>
-        <div className="flex items-center justify-center rounded-[12px] border border-[#D0D5DD] bg-white px-6 py-8 min-h-[180px]">
+        <div className="flex items-center justify-center rounded-[12px] border border-[#D0D5DD] bg-white px-6 py-8 h-[320px]">
           <Image
             src="/images/about/des.png"
             alt="DES — Dolphin Engineering Solutions"
             width={420}
             height={160}
-            className="w-full h-auto object-contain"
+            className="w-full h-auto object-contain transition-transform duration-300 hover:scale-105"
           />
         </div>
         </AnimatedSection>
         <AnimatedSection direction="right" delay={0.2}>
-        <div className="flex items-center justify-center rounded-[12px] border border-[#D0D5DD] bg-white px-6 py-8 min-h-[180px] pb-15 pt-15">
+        <div className="flex items-center justify-center rounded-[12px] border border-[#D0D5DD] bg-white px-6 py-8 h-[320px]  ">
           <Image
             src="/images/about/dais1.png"
             alt="DAIS — Dolphin Asset Integrity Solutions"
             width={420}
             height={160}
-            className="w-full h-auto object-contain"
+            className="w-full h-auto object-contain  transition-transform duration-300 hover:scale-105 "
           />
         </div>
         </AnimatedSection>
