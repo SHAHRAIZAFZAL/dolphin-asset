@@ -291,7 +291,7 @@ export default function TrainingServicesPage() {
       linear-gradient(to right, rgba(148, 163, 184, 0.12) 1px, transparent 1px),
       linear-gradient(to bottom, rgba(148, 163, 184, 0.12) 1px, transparent 1px)
     `,
-          backgroundSize: 'calc(100% / 19) calc(100% / 8)',
+          backgroundSize: 'calc(100% / 19) calc(100% / 27)',
         }}
       >
         <div className="w-full px-6 xl:px-10">
