@@ -872,7 +872,7 @@ export default function AboutPage() {
               return (
                 <StaggerContainer
                   key={`row-${rowIndex}`}
-                  className={`flex flex-wrap items-center w-full gap-y-4 ${
+                  className={`flex flex-wrap items-center justify-center w-full gap-y-4 ${
                     isLastRow ? "justify-start gap-x-4 sm:gap-x-6" : ""
                   } ${isLastThreeRows ? "ml-3 sm:ml-4" : ""}`}
                   staggerDelay={0.02}
@@ -889,8 +889,8 @@ export default function AboutPage() {
                       }}
                       className={`flex items-center justify-center h-[50px] sm:h-[60px] md:h-[70px] cursor-pointer ${
                         isLastRow
-                          ? "w-[80px] sm:w-[100px] md:w-[110px]"
-                          : "w-[60px] sm:w-[80px] md:flex-1 md:w-auto px-1 md:px-2"
+                          ? "w-[28%] sm:w-[100px] md:w-[110px]"
+                          : "w-[28%] sm:w-[80px] md:flex-1 md:w-auto px-1 md:px-2"
                       }`}
                     >
                       <Image
