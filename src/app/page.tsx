@@ -635,19 +635,14 @@ export default function Home() {
                    [18, 19, 20, 21, 22, 23, 24, 25, 26],
                    [27, 28, 29, 30, 31, 32, 33, 34, 35],
                    [36, 37, 38, 39, 40, 41, 42, 43, 44],
-                   [45, 46, 47, 48, 49, 50, 51, 52, 53],
-                   [54, 55, 56, 57, 58, 59, 60, 61, 62],
-                   [63, 64, 65, 66, 67, 68, 69, 70, 71], 
-                   [72, 73, 74, 75, 76, 77, 78, 79, 80], 
-                   [81, 82, 83, 84, 85, 86, 87, 88, 89],
-                   [90, 91, 92, 93, 94, 95, 96, 97 ],
+                   [45, 46, 47, 48, 49, 50, 51, 52, 53]
                  ].map((row, rowIndex) => {
                    const isLastRow = rowIndex === 10;
                    const isLastThreeRows = rowIndex >= 4;
                    return (
                      <StaggerContainer
                        key={`row-${rowIndex}`}
-                       className={`flex flex-wrap items-center w-full gap-y-4 ${
+                       className={`flex flex-wrap items-center justify-center w-full gap-y-4 ${
                          isLastRow ? "justify-start gap-x-4 sm:gap-x-6" : ""
                        } ${isLastThreeRows ? "ml-3 sm:ml-4" : ""}`}
                        staggerDelay={0.02}
@@ -662,10 +657,10 @@ export default function Home() {
                              stiffness: 300,
                              damping: 15,
                            }}
-                           className={`flex items-center justify-center h-[50px] sm:h-[60px] md:h-[70px] cursor-pointer ${
+                           className={`flex items-center justify-center h-[50px] mb-4 sm:mb-0 sm:h-[60px] md:h-[70px] cursor-pointer ${
                              isLastRow
-                               ? "w-[80px] sm:w-[100px] md:w-[110px]"
-                               : "w-[60px] sm:w-[80px] md:flex-1 md:w-auto px-1 md:px-2"
+                               ? "w-[28%] sm:w-[100px] md:w-[110px]"
+                               : "w-[28%] sm:w-[80px] md:flex-1 md:w-auto px-1 md:px-2"
                            }`}
                          >
                            <Image
