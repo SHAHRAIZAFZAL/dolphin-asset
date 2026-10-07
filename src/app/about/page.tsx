@@ -833,13 +833,13 @@ export default function AboutPage() {
 
       {/* Section 8: Sublime Family of Dolphin */}
       <section
-        className={`w-full bg-white py-16 pt-2 flex items-center ${montserrat.className}`}
+        className={`w-full bg-white py-16 pt-10 flex items-center ${montserrat.className}`}
       >
         <div className="w-full px-6 xl:px-10 xl:mx-24">
           <AnimatedSection direction="up">
-            <p className="text-[#FD550A] font-medium text-sm mb-2">
+            {/* <p className="text-[#FD550A] font-medium text-sm mb-2">
               Trusted Partner in Asset Integrity
-            </p>
+            </p> */}
             <h2
               className={`text-[#01286D] font-bold text-3xl sm:text-4xl mb-4 ${sourceSerif.className}`}
             >
@@ -850,12 +850,12 @@ export default function AboutPage() {
               alt=""
               width={60}
               height={3}
-              className="mb-4"
+              className="mb-12"
             />
-            <p className="text-[#434343] text-[13px] sm:text-[14px] mb-8">
+            {/* <p className="text-[#434343] text-[13px] sm:text-[14px] mb-8">
               A selection of organisations served across energy, process,
               manufacturing and <br /> infrastructure sectors.
-            </p>
+            </p> */}
           </AnimatedSection>
 
           <div className="flex flex-col gap-8 w-full -ml-4 sm:-ml-6">
