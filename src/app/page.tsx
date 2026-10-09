@@ -603,78 +603,75 @@ export default function Home() {
 
       {/* Sublime Family of Dolphin Section */}
       <section
-             className={`w-full bg-white py-16   flex items-center ${montserrat.className}`}
-           >
-             <div className="w-full px-6 xl:px-10 xl:mx-24">
-               <AnimatedSection direction="up">
+        className={`w-full bg-white py-16   flex items-center ${montserrat.className}`}
+      >
+        <div className="w-full px-6 xl:px-10 xl:mx-24">
+          <AnimatedSection direction="up">
 
-                 <h2
-                   className={`text-[#01286D] font-bold text-3xl sm:text-4xl mb-4 mt-6 ${sourceSerif.className}`}
-                 >
-                   Sublime Family of Dolphin
-                 </h2>
-                 <Image
-                   src="/images/home/upperboarder.png"
-                   alt=""
-                   width={60}
-                   height={3}
-                   className="mb-12"
-                 />
-               </AnimatedSection>
-     
-               <div className="flex flex-col gap-8 w-full -ml-4  sm:-ml-6">
-                 {[
-                   [1, 2, 3, 4, 5, 6, 7, 8, 9],
-                   [10, 11, 12, 13, 14, 15, 16, 17],
-                   [18, 19, 20, 21, 22, 23, 24, 25, 26],
-                   [27, 28, 29, 30, 31, 32, 33, 34, 35],
-                   [36, 37, 38, 39, 40, 41, 42, 43, 44],
-                   [45, 46, 47, 48, 49, 50, 51, 52, 53],
-                   [54, 55, 56, 57, 58, 59, 60, 61, 62],
-                   [63, 64, 65, 66, 67, 68, 69, 70, 71]
-                   
-                 ].map((row, rowIndex) => {
-                   const isLastRow = rowIndex === 10;
-                   const isLastThreeRows = rowIndex >= 4;
-                   return (
-                     <StaggerContainer
-                       key={`row-${rowIndex}`}
-                       className={`flex flex-wrap items-center justify-center w-full gap-y-4 ${
-                         isLastRow ? "justify-start gap-x-4 sm:gap-x-6" : ""
-                       } ${isLastThreeRows ? "ml-3 sm:ml-4" : ""}`}
-                       staggerDelay={0.02}
-                     >
-                       {row.map((num) => (
-                         <motion.div
-                           key={`logo-${num}`}
-                           variants={staggerFadeVariants}
-                           whileHover={{ scale: 1.12 }}
-                           transition={{
-                             type: "spring",
-                             stiffness: 300,
-                             damping: 15,
-                           }}
-                           className={`flex items-center justify-center h-[50px] mb-4 sm:mb-0 sm:h-[60px] md:h-[70px] cursor-pointer ${
-                             isLastRow
-                               ? "w-[28%] sm:w-[100px] md:w-[110px]"
-                               : "w-[28%] sm:w-[80px] md:flex-1 md:w-auto px-1 md:px-2"
-                           }`}
-                         >
-                           <Image
-                             src={`/images/home/logo${num}.png`}
-                             alt={`Partner logo ${num}`}
-                             width={90}
-                             height={50}
-                             className="object-contain w-full h-full transition-all duration-300"
-                           />
-                         </motion.div>
-                       ))}
-                     </StaggerContainer>
-                   );
-                 })}
-               </div>
-             </div>
-           </section>
+            <h2
+              className={`text-[#01286D] font-bold text-3xl sm:text-4xl mb-4 mt-6 ${sourceSerif.className}`}
+            >
+              Sublime Family of Dolphin
+            </h2>
+            <Image
+              src="/images/home/upperboarder.png"
+              alt=""
+              width={60}
+              height={3}
+              className="mb-12"
+            />
+          </AnimatedSection>
+
+          <div className="flex flex-col gap-8 w-full -ml-4  sm:-ml-6">
+            {[
+              [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+              [12, 13, 14, 15, 16, 17, 18, 19, 20, 21,],
+              [22, 23, 24, 25, 26, 27, 28, 29, 30,31],
+              [32, 33, 34, 35, 36, 37, 38, 39, 40,41],
+              [42, 43, 44, 45, 46, 47, 48, 49, 50, 51],
+              [52, 53, 54, 55, 56, 57, 58, 59, 60, 61],
+              [62, 63, 64, 65, 66, 67, 68, 69, 70, 71]
+
+            ].map((row, rowIndex) => {
+              const isLastRow = rowIndex === 10;
+              const isLastThreeRows = rowIndex >= 4;
+              return (
+                <StaggerContainer
+                  key={`row-${rowIndex}`}
+                  className={`flex flex-wrap items-center justify-center w-full gap-y-4 ${isLastRow ? "justify-start gap-x-4 sm:gap-x-6" : ""
+                    } ${isLastThreeRows ? "ml-3 sm:ml-4" : ""}`}
+                  staggerDelay={0.02}
+                >
+                  {row.map((num) => (
+                    <motion.div
+                      key={`logo-${num}`}
+                      variants={staggerFadeVariants}
+                      whileHover={{ scale: 1.12 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 300,
+                        damping: 15,
+                      }}
+                      className={`flex items-center justify-center h-[50px] mb-4 sm:mb-0 sm:h-[60px] md:h-[70px] cursor-pointer ${isLastRow
+                          ? "w-[28%] sm:w-[100px] md:w-[110px]"
+                          : "w-[28%] sm:w-[80px] md:flex-1 md:w-auto px-1 md:px-2"
+                        }`}
+                    >
+                      <Image
+                        src={`/images/home/logo${num}.png`}
+                        alt={`Partner logo ${num}`}
+                        width={90}
+                        height={50}
+                        className="object-contain w-full h-full transition-all duration-300"
+                      />
+                    </motion.div>
+                  ))}
+                </StaggerContainer>
+              );
+            })}
+          </div>
+        </div>
+      </section>
     </main>
   );
 }

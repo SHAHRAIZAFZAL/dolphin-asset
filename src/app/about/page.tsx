@@ -837,9 +837,6 @@ export default function AboutPage() {
       >
         <div className="w-full px-6 xl:px-10 xl:mx-24">
           <AnimatedSection direction="up">
-            {/* <p className="text-[#FD550A] font-medium text-sm mb-2">
-              Trusted Partner in Asset Integrity
-            </p> */}
             <h2
               className={`text-[#01286D] font-bold text-3xl sm:text-4xl mb-4 ${sourceSerif.className}`}
             >
@@ -852,22 +849,18 @@ export default function AboutPage() {
               height={3}
               className="mb-12"
             />
-            {/* <p className="text-[#434343] text-[13px] sm:text-[14px] mb-8">
-              A selection of organisations served across energy, process,
-              manufacturing and <br /> infrastructure sectors.
-            </p> */}
+
           </AnimatedSection>
 
           <div className="flex flex-col gap-8 w-full -ml-4 sm:-ml-6">
             {[
-              [1, 2, 3, 4, 5, 6, 7, 8, 9],
-              [10, 11, 12, 13, 14, 15, 16, 17],
-              [18, 19, 20, 21, 22, 23, 24, 25, 26],
-              [27, 28, 29, 30, 31, 32, 33, 34, 35],
-              [36, 37, 38, 39, 40, 41, 42, 43, 44],
-              [45, 46, 47, 48, 49, 50, 51, 52, 53],
-              [54, 55, 56, 57, 58, 59, 60, 61, 62],
-              [63, 64, 65, 66, 67, 68, 69, 70, 71]
+             [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+              [12, 13, 14, 15, 16, 17, 18, 19, 20, 21,],
+              [22, 23, 24, 25, 26, 27, 28, 29, 30,31],
+              [32, 33, 34, 35, 36, 37, 38, 39, 40,41],
+              [42, 43, 44, 45, 46, 47, 48, 49, 50, 51],
+              [52, 53, 54, 55, 56, 57, 58, 59, 60, 61],
+              [62, 63, 64, 65, 66, 67, 68, 69, 70, 71]
             ].map((row, rowIndex) => {
               const isLastRow = rowIndex === 10;
               const isLastThreeRows = rowIndex >= 4;
