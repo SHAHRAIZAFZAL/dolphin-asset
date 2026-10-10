@@ -25,7 +25,7 @@ const sourceSerif = Source_Serif_4({
 
 export default function AboutPage() {
   return (
-    <div className={`w-full ${montserrat.className}`}>
+    <div className={`w-full overflow-x-hidden ${montserrat.className}`}>
       {/* Section 1: Hero / About DAIS */}
       <section className="relative w-full min-h-[600px] flex items-center justify-start py-20 px-6 xl:px-10 overflow-hidden text-white">
         {/* Background Image */}
@@ -159,85 +159,6 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-
-      {/* Section 3: Our Evolution (From DES To DAIS) */}
-      {/* <section className="w-full bg-[#f8fafc] py-20">
-        <div className="w-full px-6 xl:px-10">
-          <div className="xl:ml-24 xl:mr-24 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            //  Left Text & Checkpoints Area 
-            <AnimatedSection direction="left" delay={0.2}>
-              <div className="flex flex-col justify-center">
-                <h3 className="text-[#FD550A] font-medium text-[14px] leading-[140%] tracking-[2px] mb-3 normal-case">
-                  Our Evolution
-                </h3>
-
-                <h2
-                  className={`${sourceSerif.className} font-bold text-[#01286D] text-[38px] leading-[110%] tracking-[2%] mb-4`}
-                >
-                  From DES To DAIS
-                </h2>
-
-                <div className="mb-6">
-                  <Image
-                    src="/images/about/barline.png"
-                    alt="Divider"
-                    width={60}
-                    height={4}
-                  />
-                </div>
-
-                <p className="font-normal text-[#434343] text-[13px] leading-[175%] tracking-[0%] text-justify mb-8">
-                  With an established client base and successful operations
-                  under DES — Dolphin <br />
-                  Engineering Solutions — we are now expanding our capabilities
-                  through DAIS: a <br />
-                  new identity designed to serve clients while building on
-                  enhanced technical <br />
-                  expertise and our team.
-                </p>
-
-                //  Checkpoints List 
-                <div className="space-y-4">
-                  {[
-                    "Same leadership, same trusted client relationships",
-                    "Broader scope across inspection, calibration, testing and training",
-                    "Strengthened technical team and engineering capability",
-                  ].map((text, idx) => (
-                    <div key={idx} className="flex items-start space-x-3">
-                      <Image
-                        src="/images/about/Tick.png"
-                        alt="Tick Icon"
-                        width={12}
-                        height={12}
-                        className="object-contain mt-1"
-                      />
-                      <p className="font-normal text-[#434343] text-[13px] leading-[163%] tracking-[0%] text-justify">
-                        {text}
-                      </p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </AnimatedSection>
-
-            // DAIS Image Only 
-            <AnimatedSection direction="right" delay={0.4}>
-              <div className="relative w-full h-[220px] md:h-[250px]">
-                <Image
-                  src="/images/about/DAIS.png"
-                  alt="Dolphin Asset Integrity Solutions"
-                  fill
-                  quality={100}
-                  className="object-contain mt-12"
-                />
-              </div>
-            </AnimatedSection>
-          </div>
-        </div>
-      </section> */}
-
-
-
 
 {/* Corporate Relationship */}
 <section className="w-full bg-white py-16">
@@ -863,7 +784,7 @@ export default function AboutPage() {
               [62, 63, 64, 65, 66, 67, 68, 69, 70, 71]
             ].map((row, rowIndex) => {
               const isLastRow = rowIndex === 10;
-              const isLastThreeRows = rowIndex >= 4;
+              const isLastThreeRows = rowIndex >= 4; 
               return (
                 <StaggerContainer
                   key={`row-${rowIndex}`}
