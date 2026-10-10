@@ -36,9 +36,8 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: ReactNode }>) {
   return (
-    <html
-  lang="en"
-  className={`${geistSans.variable} ${geistMono.variable} ${sourceSerif.variable} ${montserrat.variable} h-full antialiased`}
+    <html lang="en"
+  className={`${geistSans.variable} ${geistMono.variable} ${sourceSerif.variable} ${montserrat.variable} h-full antialiased overflow-x-hidden w-full m-0 p-0`}
 >
       <body className="min-h-full flex flex-col">
         <ScrollToTop />
