@@ -46,7 +46,7 @@ export default function Footer() {
 
         <AnimatedSection direction="right" delay={0.2}>
           <a
-            href="/quote"
+            href="/contact"
             className="flex items-center gap-4 bg-[linear-gradient(269.77deg,#FF6221_3.66%,#D9480D_116.34%)] text-white text-[12px] font-semibold px-5 py-3 rounded-lg xl:mr-24 hover:opacity-90 transition whitespace-nowrap animate-pulse-glow"
           >
             REQUEST A QUOTE

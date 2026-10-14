@@ -123,7 +123,7 @@ export default function Navbar() {
         {/* Request a Quote Button */}
         <div className="hidden xl:block mr-24">
           <Link
-            href="/quote"
+            href="/contact"
             className="flex items-center gap-2 bg-[linear-gradient(269.77deg,#FF6221_3.66%,#D9480D_116.34%)] text-white text-sm font-semibold px-5 py-3 rounded-lg hover:opacity-90 transition animate-pulse-glow"
           >
             REQUEST A QUOTE
@@ -197,7 +197,7 @@ export default function Navbar() {
 
             <div className="pt-2">
                <Link
-                href="/quote"
+                href="/contact"
                 className="flex items-center justify-center gap-2 bg-[linear-gradient(269.77deg,#FF6221_3.66%,#D9480D_116.34%)] text-white text-sm font-semibold px-5 py-3 rounded-lg hover:opacity-90 transition w-full animate-pulse-glow"
               >
                 REQUEST A QUOTE

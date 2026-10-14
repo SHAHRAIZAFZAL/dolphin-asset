@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { Source_Serif_4, Montserrat, Inter } from "next/font/google";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import AnimatedSection from "./components/AnimatedSection";
 import StaggerContainer, {
   staggerItemVariants,
@@ -90,7 +91,7 @@ export default function Home() {
 
           <AnimatedSection direction="up" delay={0.8}>
             <div className="flex flex-wrap gap-4">
-              <button
+              <Link href="/contact" 
                 className={`bg-[linear-gradient(270deg,#FF6221_0%,#E04D10_111.95%)] hover:opacity-90 text-white text-[14px] font-medium px-5 py-4 rounded-md flex items-center gap-4 transition animate-pulse-glow ${inter.className}`}
               >
                 REQUEST A QUOTE
@@ -100,7 +101,8 @@ export default function Home() {
                   width={6}
                   height={6}
                 />
-              </button>
+              </Link>
+              <Link href="/services" >
               <motion.button
                 whileHover={{ y: -3 }}
                 transition={{ type: "spring", stiffness: 300, damping: 15 }}
@@ -108,6 +110,7 @@ export default function Home() {
               >
                 EXPLORE OUR SERVICES
               </motion.button>
+              </Link>
             </div>
           </AnimatedSection>
         </div>
