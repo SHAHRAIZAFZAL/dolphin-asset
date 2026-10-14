@@ -15,7 +15,7 @@ export default function ServicesPage() {
       <section className="relative w-full min-h-[500px] flex items-center justify-start py-20 px-6 xl:px-10 overflow-hidden text-white bg-[#01286D]">
         {/* Layer 1: Base Image (img.png) */}
         <Image
-          src="/images/Services/img.png"
+          src="/images/services/img.png"
           alt="Background"
           fill
           priority
